@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link type = "text/css" href = "mystyles.css" rel="stylesheet">
+   
+</head>
+<body>
+    <h2>Form</h2>
+<form method = "post" action = "/action_page.php">
+    <label>Username: <input type = "text" name = "Username" placeholder= "Username"></label>
+    <br>
+    <label>Password: <input type = "password" name = "password" placeholder="Password"> </label>
+    <br>
+    Gender: 
+    <input type = "radio" id = "male" name = "gender" value = "m">  
+    <label for = "male">Male</label>
+    <input type = "radio" id = "female" name = "gender" value = "f">
+    <label for = "female">Female</label>
+    <br>
+    Skills: 
+    <input type = "checkbox" id = "java" name = "skills">
+    <label for = "java">Java</label>
+    <input type = "checkbox" id = "C" name = "skills">
+    <label for = "C">C</label>
+    <input type = "checkbox" id = "python" name = "skills">
+    <label for = "python">Python</label>
+    <input type = "checkbox" id = "html" name = "skills">
+    <label for = "html">HTML</label>
+    <br>
+    <label for = "quals">Qualifiations: </label>
+    <select name = "quals" id = "quals">
+        <option disabled selected value style = "display:none"></option>
+        <option value = "cs">Computer Science</option>
+        <option value = "ce">Computer Engineering</option>
+        <option value = "math">Math</option>
+    </select>
+    <br>
+    <label for = "dob">Date of Birth: </label>
+    <input type = "date" name = "dob">
+    <br>
+    <input type = "submit" value = "Register">
+    <input type = "reset" value = "Reset">
+
+</form>
+</body>
