@@ -1,0 +1,33 @@
+.top{
+    display: flex;
+    border: 5px solid brown;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.left{
+    display: flex;
+    border: 5px solid green;
+    width: 20%;
+    align-items: left;
+}
+.right{
+
+}
+.mid{
+    display: flex;
+    border: 5px solid blue;
+    flex: 1;
+    height: 300px;
+}
+.sides{
+    flex: 1;
+    height: 300px;
+}
+.bottom{
+    display: flex;
+    border: 5px solid purple;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
