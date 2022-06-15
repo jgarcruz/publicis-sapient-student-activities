@@ -1,0 +1,84 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link type = "text/css" href = "style.css" rel="stylesheet">
+   
+</head>
+<body>
+    <h2>Form</h2>
+<form name = "login" method = "post" action = "Activity2.html" onsubmit="return handleClick()">
+    <label>Firstname: <input type = "text" name = "firstname" placeholder= "Firstname"></label>
+    <br>
+    <label>Lastname: <input type = "text" name = "lastname" placeholder="Lastname"></label>
+    <br>
+    Gender: 
+    <input type = "radio" id = "male" name = "gender" value = "m">  
+    <label for = "male">Male</label>
+    <input type = "radio" id = "female" name = "gender" value = "f">
+    <label for = "female">Female</label>
+    <br>
+    <label>Password: <input type = "password" name = "password" placeholder="Password"> </label>
+    <br>
+    <label>Confirm Password: <input type = "password" name = "Cpassword" placeholder="Password"> </label>
+    <br>
+    Skills: 
+    <input type = "checkbox" id = "java" name = "skills">
+    <label for = "java">Java</label>
+    <input type = "checkbox" id = "C" name = "skills">
+    <label for = "C">C</label>
+    <input type = "checkbox" id = "python" name = "skills">
+    <label for = "python">Python</label>
+    <input type = "checkbox" id = "html" name = "skills">
+    <label for = "html">HTML</label>
+    <br>
+    <input type = "submit" value = "Register">
+    <input type = "reset" value = "Reset">
+    
+</form>
+<script type = "text/javascript">
+    function handleClick()
+    {
+        let form = document.login;
+        let pw1 = form.password;
+        let pw2 = form.Cpassword;
+        let fn = form.firstname;
+        let ln = form.lastname;
+        let gender = form.gender;
+        let skills = form.skills;
+        if(!skills)
+        {
+            alert("missing skills.");
+            return false;
+        }
+        if(!gender.value)
+        {
+            alert("select a gender.");
+            return false;
+        }
+        if(pw1.value.length == 0 || pw2.value.length == 0)
+        {
+            alert("password is empty.");
+            return false;
+        }
+        if(pw1.value != pw2.value)
+        {
+            alert("passwords dont match.");
+            return false;
+        }
+        if(ln.length < 2)
+        {
+            alert("Lastname too short.");
+            return false;
+        }
+        if(fn.length < 3)
+        {
+            alert("Firstname too short.");
+            return false;
+        }
+        return true;
+    }
+</script>
+</body>
