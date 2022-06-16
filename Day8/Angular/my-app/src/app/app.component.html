@@ -1,0 +1,17 @@
+<head>
+</head>
+<style>
+  table, tr, td{
+    border: 1px solid black
+  }
+</style>
+<body>
+<div *ngFor = "let u of users">
+  <table>
+    <tr>
+      <td>Name: {{u.name}}</td>
+      <td>Age: {{u.age}}</td>
+      <td>Gender: {{u.gender}}</td>
+    </tr>
+  </table>
+</div>
