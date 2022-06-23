@@ -91,6 +91,16 @@ public class ProfileController {
 	@PutMapping("/{id}/?{phone}")
 	public ResponseEntity<Object> modPhoneFriend(@RequestBody Friend friend, @PathVariable("profileId") int id, @PathVariable("phone") long phone)
 	{
-
+		try{
+			friendService.modFriendPhone(id, friend, phone);
+			return ResponseEntity.status(HttpStatus.OK).body(friend);
+		} catch(ProfileNotFoundException e)
+		{
+			// Exception has getMessage() that returns the message initialized when exception occurs
+			Map<String, String> map = new HashMap<String, String>();
+			map.put("error", e.getMessage()); // e.getMessage(): Profile with an id not found
+			map.put("status", "404");
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(map);
+		}
 	}
 }

@@ -36,4 +36,13 @@ public class FriendServiceImpl implements FriendService {
 		friendDao.delete(friend);
 	}
 
+	@Override
+	public void modFriendPhone(int profileIdRef, Friend friend, long phone) throws ProfileNotFoundException {
+		int id = friend.getProfileIdRef();
+		if(id != profileIdRef)
+		{
+			throw new ProfileNotFoundException("not a fwend or profile dont exist");
+		}
+		friend.setPhone(phone);
+	}
 }
