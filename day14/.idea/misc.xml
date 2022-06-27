@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/my-first-app.zip_expanded/my-first-app/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-demo.zip_expanded/spring-boot-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/wallet-service-app.zip_expanded/wallet-service-app/pom.xml" />
+        <option value="$PROJECT_DIR$/account-service-app.zip_expanded/account-service-app/pom.xml" />
+        <option value="$PROJECT_DIR$/service-discovery-app.zip_expanded/service-discovery-app/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_18" default="true" project-jdk-name="18" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$" />
+  </component>
+</project>

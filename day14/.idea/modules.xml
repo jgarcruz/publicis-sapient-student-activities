@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/account-service-app.zip_expanded/account-service-app/account-service-app.iml" filepath="$PROJECT_DIR$/account-service-app.zip_expanded/account-service-app/account-service-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-first-app.zip_expanded/my-first-app/my-first-app.iml" filepath="$PROJECT_DIR$/my-first-app.zip_expanded/my-first-app/my-first-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-discovery-app.zip_expanded/service-discovery-app/service-discovery-app.iml" filepath="$PROJECT_DIR$/service-discovery-app.zip_expanded/service-discovery-app/service-discovery-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-demo.zip_expanded/spring-boot-demo/spring-boot-demo.iml" filepath="$PROJECT_DIR$/spring-boot-demo.zip_expanded/spring-boot-demo/spring-boot-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wallet-service-app.zip_expanded/wallet-service-app/wallet-service-app.iml" filepath="$PROJECT_DIR$/wallet-service-app.zip_expanded/wallet-service-app/wallet-service-app.iml" />
+    </modules>
+  </component>
+</project>

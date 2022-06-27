@@ -49,7 +49,7 @@ public class ProfileController {
 		}	
 	}
 	@PutMapping("/{id}/{phone}")
-	public ResponseEntity<Object> modifyPhone(int id, long phone) throws ProfileNotFoundException
+	public ResponseEntity<Object> modifyPhone(@PathVariable("id") int id, @PathVariable("phone") long phone) throws ProfileNotFoundException
 	{
 		try{
 			Profile profile = profileService.fetchProfile(id);
